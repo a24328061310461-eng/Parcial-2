@@ -17,11 +17,12 @@
 
     <style>
          :root{
-    --color-de-fondo: #bacba9;   /* azul gris pastel */
-    --color-de-lertras: #e1f4cb; /* azul oscuro suave */
-    --color-barra: #717568;      /* azul pastel medio */
-    --color-boton: #f1bf98;     /* rojo coral pastel */
-    --color-extra: #3f4739;     /* rojo suave */
+    --color-de-fondo: #bacba9;
+    --color-de-lertras: #e1f4cb;
+    --color-barra: #717568;
+    --color-boton: #f1bf98;
+    --color-extra: #3f4739;
+    
 }
 
 
@@ -94,6 +95,33 @@
     <p class="lead">
         <a class="btn btn-primary btn-lg" href="#" role="button">Botón</a>
     </p>
+</div>
+<body>
+
+<div class="container">
+        <h1>Agregar Personaje de Marvel</h1>
+        <form action="insertar_datos.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="alias">Alias:</label>
+            <input type="text" id="alias" name="alias" required>
+            
+            <label for="fechacreacion">Fecha de Creación:</label>
+            <input type="date" id="fechacreacion" name="fechacreacion" required>
+            
+            <label for="descripcion">Descripción:</label>
+            <textarea id="decripcion" name "descripcion" required></textarea>
+
+            <label for="comics">Comics (Separados por comas):</label>
+            <input type="text" id="comics" name="comics" placeholder="Ejemplo: Spider-Man, Ironman" required>
+
+            <label for="superpoderes">Superpoderes (Separados por comas):</label>
+            <input type="text" id="superpoderes" name="superpoderes" placeholder="Ejemplo: Fuerza, Velocidad" required>
+
+            <input type="submit" value="Guardar Personaje">
+        </form>
+
 </div>
 
 </body>
